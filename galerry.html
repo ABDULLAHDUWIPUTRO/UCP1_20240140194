@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-5 text-center">
+        <a href="./index.html" class="btn btn-outline-light mb-4">Kembali ke Home</a>
+        <h2>Gallery Multimedia</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img id="mainImage" src="Saintdenis.jpg" class="img-fluid rounded mb-2">
+                <button onclick="changeImage()" class="btn btn-primary btn-sm">Ganti Gambar</button>
+            </div>
+            
+            <div class="col-md-4">
+                <iframe width="100%" height="200" src="gothic.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-4">
+                <audio id="myAudio" src="church.mp3"></audio>
+                <div class="mt-3">
+                    <button onclick="playAudio()" class="btn btn-success">Play</button>
+                    <button onclick="pauseAudio()" class="btn btn-danger">Pause</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('myAudio');
+        function playAudio() { audio.play(); }
+        function pauseAudio() { audio.pause(); }
+        
+        function changeImage() {
+            document.getElementById('mainImage').src = "https://via.placeholder.com/300/000000/FFFFFF?text=Tech+Image";
+            alert("Gambar telah diganti!");
+        }
+    </script>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
