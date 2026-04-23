@@ -1,4 +1,4 @@
-document.getElementById("video-header").addEventListener("click", function() {
+document.getElementById("video-header").addEventListener("click", function() { //membuat tombol untuk menyambungkan/membuat tombol di pages galery html supaya bisa di run
     alert("Memutar: Visions of the Cathedral (Cinematic Gothic)");
 });
 
