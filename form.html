@@ -44,10 +44,10 @@
                 minat: document.getElementById('interest').value
             };
 
-            members.push(member); // Simpan ke array sementara
+            members.push(member); //menyimpan ke array
             alert('Data berhasil disimpan!');
 
-            // Tampilkan hasil di bawah form
+            
             const resultDiv = document.getElementById('result');
             resultDiv.classList.remove('d-none');
             resultDiv.innerHTML = `<strong>Hasil Input:</strong><br>Nama: ${member.nama}<br>Email: ${member.email}<br>Minat: ${member.minat}`;
